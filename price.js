@@ -102,3 +102,6 @@ console.log(`polecany artysta to ${artist}`)
 console.log(
 	'Podana cena jest orientacyjna, skontaktuj się ze studiem lub bezpośrdnio z polecanym artystą aby potwierdzić cenę'
 )
+
+
+
