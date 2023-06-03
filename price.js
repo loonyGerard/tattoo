@@ -1,9 +1,11 @@
 // Dane wejściowe
-let sizeX = 10
-let sizeY = 20
-let isColored = true // Czy tatuaż jest kolorowy (true lub false)
-let tattooIntensity = 4 // Intensywność tatuażu (skala od 1 do 5)
-let tattooStyle = 1 // 1 - "realism", 2 - "sketch", 3 graficzny
+let sizeX = parseInt(document.getElementById('sizeX').value)
+let sizeY = parseInt(document.getElementById('sizeY').value)
+let tattooIntensity = parseInt(document.getElementById('tattooIntensivity').value)
+let isColored = document.getElementById("colorCheck").checked
+console.log(isColored);
+let tattooStyle = parseInt(document.getElementById("tattooStyle").value)
+// 1 - "realism", 2 - "sketch", 3 graficzny
 
 const tattooSize = sizeX * sizeY // Wielkość tatuażu w centymetrach kwadratowych
 const colorMultiplier = 1.2 // Mnożnik zależny od koloru

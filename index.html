@@ -6,37 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 
 <body>
+    <h1>Wyceń swój tatuaż!</h1>
+
     <label for="sizeX">szerokość tatuażu (1-100):</label>
     <input type="number" id="sizeX" name="sizeX" min="1" max="100">
     <br>
+
     <label for="sizeY">wysokość tatuażu (1-100):</label>
     <input type="number" id="sizeY" name="sizeY" min="1" max="100">
     <br>
+
     <label for="tattooIntensivity">ilość szczegółów:</label>
     <input id="tattooIntensivity" type="range" name="pointsIntensivity" min="1" max="5">
     <br>
-    <input type="checkbox" name="color" value="wartość">Czy tatuaż z kolorem (jeżeli tylko akcent jednego koloru to nie zaznaczaj)
+
+    <label for="colorCheck">Czy tatuaż z kolorem :</label>
+    <input id="colorCheck" type="checkbox" name="color" value="wartość">(jeżeli tylko akcent jednego koloru to nie
+    zaznaczaj)
     <br>
+
     <label for="tattooStyle">Styl tatuazu:</label>
     <select id="tattooStyle">
         <option value="1">Realistyczny</option>
         <option value="2">Szkicowy</option>
         <option value="3">Graficzny</option>
-      </select><br>
+    </select>
+    <br>
 
     <input type="button" id="btn1" value="WYCEŃ">
-    <p>Twoj tatuaż będzie kosztować:</p>
-    <p clas="output" id="output1"></p>
-    <p id="artistP">polecany artysta + linki</p>
-    <br>
-    <p id="sessionP">info o sesjach</p>
-    <br>
-    <p id="endP">info końcowe</p>
-    <br>
+    <div id="finishedText">
+        <p>Twoj tatuaż będzie kosztować:</p>
+        <p clas="output" id="output1"></p>
+        <p id="artistP">polecany artysta + linki</p>
+        <br>
+        <p id="sessionP">info o sesjach</p>
+        <br>
+        <p id="endP">info końcowe</p>
+        <br>
+    </div>
+
 
     <script src="price.js"></script>
 </body>
