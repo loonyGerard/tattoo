@@ -3,7 +3,7 @@ let sizeX = 10
 let sizeY = 20
 let isColored = true // Czy tatuaż jest kolorowy (true lub false)
 let tattooIntensity = 4 // Intensywność tatuażu (skala od 1 do 5)
-let tattooStyle = 2 // 1 - "realism", 2 - "sketch", 3 graficzny
+let tattooStyle = 1 // 1 - "realism", 2 - "sketch", 3 graficzny
 
 const tattooSize = sizeX * sizeY // Wielkość tatuażu w centymetrach kwadratowych
 const colorMultiplier = 1.2 // Mnożnik zależny od koloru
@@ -95,13 +95,25 @@ if (tattooStyle == 1) {
 } else {
 	;('skontaktuj się ze studiem w celu dobrania artysty')
 }
-
-console.log(`polecany artysta to ${artist}`)
+const textArtist = 'polecany artysta to'
+console.log(`${textArtist} ${artist}`)
 
 // info końcowe
-console.log(
+const textEnd =
 	'Podana cena jest orientacyjna, skontaktuj się ze studiem lub bezpośrdnio z polecanym artystą aby potwierdzić cenę'
-)
+console.log(textEnd)
 
+const out1 = document.getElementById('output1')
+const btn1 = document.getElementById('btn1')
+const endP = document.getElementById('endP')
+const sessionP = document.getElementById('sessionP')
+const artistP = document.getElementById('artistP')
 
+function priceValue() {
+	out1.innerHTML = priceRound + 'zł'
+	endP.innerHTML = textEnd
+	sessionP.innerHTML = textSessionCount
+	artistP.innerHTML = textArtist + ' ' + artist
+}
 
+btn1.addEventListener('click', priceValue)

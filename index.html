@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="price.js"></script>
+    
 </head>
 
 <body>
@@ -28,18 +28,17 @@
         <option value="3">Graficzny</option>
       </select><br>
 
-    
-  
+    <input type="button" id="btn1" value="WYCEŃ">
     <p>Twoj tatuaż będzie kosztować:</p>
-    <div class="input">
-    <input type="text" name="display">
-    </div>
-    <p>polecany artysta + linki</p>
+    <p clas="output" id="output1"></p>
+    <p id="artistP">polecany artysta + linki</p>
     <br>
-    <p>info o sesjach</p>
+    <p id="sessionP">info o sesjach</p>
     <br>
-    <p>info końcowe</p>
+    <p id="endP">info końcowe</p>
     <br>
+
+    <script src="price.js"></script>
 </body>
 
 </html>
